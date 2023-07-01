@@ -1,0 +1,59 @@
+@use 'vars' as vars;
+
+#navbar {
+  width: 6.25rem;
+  height: 32rem;
+  border-radius: 40px;
+
+  background-color: vars.$translucent-colour;
+  backdrop-filter: vars.$translucent-blur;
+
+  top: calc((100% - 512px)/2);
+  left: 2.25rem;
+
+  position: fixed;
+
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 4rem;
+  flex-direction: column;
+  justify-content: space-around;
+
+  i {
+    width: 4rem;
+    background: none;
+  }
+
+  img {
+    margin: auto;
+    width: 4rem;
+  }
+
+  .navicon {
+    width: auto;
+    height: auto;
+
+    padding: 1rem;
+
+    span {
+      background-color: vars.$translucent-colour;
+      backdrop-filter: vars.$translucent-blur;
+
+      display: none;
+
+      border-radius: 40px;
+      padding: 2rem 4rem 2em 4rem;
+      margin-left: 1.5rem;
+    }
+  }
+
+  .navicon:hover {
+    width: 20rem;
+
+    span {
+      display: inline;
+    }
+  }
+}
+

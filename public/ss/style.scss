@@ -1,55 +1,36 @@
-html {
+@use 'vars' as vars;
+
+html, body {
+  margin: 0;
+
+  background-color: vars.$bg;
+
   font-family: sans-serif;
 }
 
-#navbar {
-  width: 6.25rem;
-  height: 32rem;
-  border-radius: 40px;
+#home-logo {
+  width: 32rem;
 
-  background-color: #D9D9D9;
-
-  margin-top: calc((100% - 512px)/4);
-  margin-left: 2.25rem;
-
-  position: fixed;
-
-  display: flex;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 4rem;
-  flex-direction: column;
-  justify-content: space-around;
-
-  i {
-    width: 4rem;
-  }
-
-  img {
-    margin: auto;
-    width: 4rem;
-  }
-}
-
-.navicon {
-  width: auto;
-  height: auto;
-  border-radius: 40px;
+  position: absolute;
+  top: 10%;
+  left: calc((100% - 544px)/2);
 
   padding: 1rem;
 
-  background-color: #D9D9D9;
+  border-radius: 40px;
 
-  span {
-    display: none;
-  }
+  background-color: vars.$translucent-colour;
+  backdrop-filter: vars.$translucent-blur;
 }
 
-.navicon:hover {
-  width: 20rem;
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
 
-  span {
-    display: inline;
-    margin-left: 1.5em;
-  }
+  margin-top: 1rem;
+
+  background-color: vars.$accent;
+
+  text-align: center;
 }
