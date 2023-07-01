@@ -14,9 +14,6 @@
   position: fixed;
 
   display: flex;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 4rem;
   flex-direction: column;
   justify-content: space-around;
 
@@ -30,29 +27,39 @@
     width: 4rem;
   }
 
-  .navicon {
+  .nav-icon {
     width: auto;
     height: auto;
 
     padding: 1rem;
 
+    color: vars.$text;
+
     span {
       background-color: vars.$translucent-colour;
       backdrop-filter: vars.$translucent-blur;
 
-      display: none;
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+
+      overflow: hidden;
+      white-space: nowrap;
 
       border-radius: 40px;
       padding: 2rem 4rem 2em 4rem;
       margin-left: 1.5rem;
+
+      transition: visibility 0s, opacity 0.25s ease-in-out;
     }
   }
 
-  .navicon:hover {
+  .nav-icon:hover {
     width: 20rem;
 
     span {
-      display: inline;
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

@@ -5,7 +5,51 @@ html, body {
 
   background-color: vars.$bg;
 
-  font-family: sans-serif;
+  font-family: Quicksand, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: xxx-large;
+
+  color: vars.$text;
+}
+
+footer {
+  bottom: 0;
+  width: 96%;
+
+  color: vars.$text;
+
+  border-radius: 40px 40px 0 0;
+
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 0 5rem 0;
+
+  text-align: center;
+
+  background-color: vars.$accent;
+}
+
+.info-card {
+  width: 50%;
+  height: 20em;
+
+  border-radius: 40px;
+
+  margin: 2rem auto;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info-card-column {
+  padding: 2rem;
 }
 
 #home-logo {
@@ -23,14 +67,35 @@ html, body {
   backdrop-filter: vars.$translucent-blur;
 }
 
-footer {
-  bottom: 0;
-  width: 100%;
-  height: 4rem;
+#card-1 {
+  color: vars.$accent;
+  background-color: vars.$primary;
 
-  margin-top: 1rem;
+  text-align: left;
 
+  img {
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+}
+
+#card-2 {
+  color: vars.$text;
   background-color: vars.$accent;
 
-  text-align: center;
+  text-align: right;
+}
+
+#card-3 {
+  color: vars.$accent;
+  background-color: vars.$primary;
+
+  text-align: left;
+
+  img {
+    height: 17.625rem;
+    border-radius: 40px;
+    overflow: hidden;
+  }
 }
