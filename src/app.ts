@@ -4,11 +4,14 @@
 
 import express from 'express';
 
+const compression = require('compression');
+
 const app: express.Application = express();
 const port = process.env.PORT || 3000;
 //const functions = require('./api/functions.ts');
 
 app.use(express.static('public'));
+app.use(compression())
 app.set('view engine', 'ejs')
 app.listen(port, () => console.log(`Server is running on port ${port}`));
 
