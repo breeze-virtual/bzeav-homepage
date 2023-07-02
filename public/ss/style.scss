@@ -32,22 +32,27 @@ footer {
   background-color: vars.$accent;
 }
 
-.info-card {
-  width: 50%;
-  height: 20em;
+#card {
+  width: 70%;
+
+  color: vars.$text;
 
   border-radius: 40px;
 
-  margin: 2rem auto;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+  background-color: vars.$accent;
 
-.info-card-column {
-  padding: 2rem;
+  h2 {
+    text-align: center;
+  }
 }
 
 #content {
@@ -69,35 +74,3 @@ footer {
   backdrop-filter: vars.$translucent-blur;
 }
 
-#card-1 {
-  color: vars.$accent;
-  background-color: vars.$primary;
-
-  text-align: left;
-
-  img {
-    height: 100%;
-    border-radius: 40px;
-    overflow: hidden;
-  }
-}
-
-#card-2 {
-  color: vars.$text;
-  background-color: vars.$accent;
-
-  text-align: right;
-}
-
-#card-3 {
-  color: vars.$accent;
-  background-color: vars.$primary;
-
-  text-align: left;
-
-  img {
-    height: 17.625rem;
-    border-radius: 40px;
-    overflow: hidden;
-  }
-}
