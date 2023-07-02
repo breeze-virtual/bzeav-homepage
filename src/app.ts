@@ -4,6 +4,8 @@
 
 import express from 'express';
 
+require('dotenv').config();
+
 const compression = require('compression');
 
 const app: express.Application = express();

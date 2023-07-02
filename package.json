@@ -11,7 +11,8 @@
 	},
 	"scripts": {
 		"start": "node src/app.ts",
-		"dev": "nodemon src/app.ts"
+		"dev": "nodemon src/app.ts",
+		"compile": "tsc && sass --no-source-map --style=compressed public/ss:public/ss"
 	},
 	"engines": {
 		"node": ">=18.6.0"
