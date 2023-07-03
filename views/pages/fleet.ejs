@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cian Ormond">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Fleet</title>
+    <link rel="stylesheet" href="/ss/style.css">
+    <link rel="stylesheet" href="/ss/fleet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand">
+    <script src="/js/friconix-icons.js"></script>
+</head>
+<body>
+    <%-include('../partials/navbar')-%>
+    <div id="cover">
+        <img src="/img/cover.jpg" alt="Breeze Airways aircraft pushing back" width="100%">
+        <img id="home-logo" src="/img/breeze-virtual-logo.svg" alt="Breeze Airways Virtual logo">
+    </div>
+    <div id="card">
+        <div class="promo-card" id="card-1">
+            <div class="promo-card-column">
+                <img src="/img/a220.jpg" alt="Airbus A220 image">
+            </div>
+            <div class="promo-card-column">
+                <h2>Airbus A220-300</h2>
+                <p>
+                    Formerly part of the Bombardier C-Series program, the Airbus A220 is a medium-range narrow-body
+                    airliner introduced in 2016. Bombardier produced it until 2020, when Airbus took full control.<br>
+                </p>
+                <span><strong>Specifications:</strong></span><br>
+                <p>
+                    <strong>Range:</strong> 3,600 nm<br>
+                    <strong>Capacity:</strong> 120-150 pax<br>
+                    <strong>Engines:</strong> Pratt & Whitney PW1500G<br>
+                    <strong>Top Speed:</strong> Mach 0.82<br>
+                </p>
+            </div>
+        </div>
+        <div class="promo-card" id="card-2">
+            <div class="promo-card-column">
+                <img src="/img/cover.jpg" alt="Embraer E190 image">
+            </div>
+            <div class="promo-card-column">
+                <h2>Embraer E190/E195</h2>
+                <p>
+                    Based on the E170 and E175, the Embraer E190 and E195 are the largest members of the E-Jet family.
+                    They are short-to-medium-range narrow-body airliners introduced in 2005.<br>
+                </p>
+                <span><strong>Specifications:</strong></span><br>
+                <p>
+                    <strong>Range:</strong> 2,450/2,300 nm<br>
+                    <strong>Capacity:</strong> 96-114/100-124 pax<br>
+                    <strong>Engines:</strong> General Electric CF34-10E<br>
+                    <strong>Top Speed:</strong> Mach 0.82<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <%-include('../partials/footer')%>
+</body>

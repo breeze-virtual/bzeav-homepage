@@ -1,23 +1,5 @@
 @use 'vars' as vars;
 
-.promo-card {
-  width: 50%;
-  height: 20em;
-
-  border-radius: 40px;
-
-  margin: 2rem auto;
-  padding: 1rem;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.promo-card-column {
-  padding: 2rem;
-}
-
 #card-1 {
   color: vars.$accent;
   background-color: vars.$primary;

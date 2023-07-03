@@ -58,6 +58,10 @@ app.get('/news/:date/:id', async (req, res) => {
     }
 });
 
+app.get('/fleet', async (req, res) => {
+    res.render('pages/fleet.ejs');
+});
+
 app.get('*', (req, res) => {
     res.render('pages/err.ejs', { code: 404, message: 'Page not found' });
 });
