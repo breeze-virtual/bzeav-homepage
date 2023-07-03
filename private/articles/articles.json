@@ -1,0 +1,11 @@
+{
+  "articles": [
+    {
+      "id": "website-launch",
+      "title": "Website Launch",
+      "date": "2023-07-02",
+      "author": "Cian Ormond",
+      "firstLine": "Welcome to Breeze Airways Virtual's website!"
+    }
+  ]
+}

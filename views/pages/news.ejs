@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cian Ormond">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="/ss/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand">
+    <script src="/js/friconix-icons.js"></script>
+</head>
+<body>
+    <%-include('../partials/navbar')-%>
+    <div id="cover">
+        <img src="/img/cover.jpg" alt="Breeze Airways aircraft pushing back" width="100%">
+        <img id="home-logo" src="/img/breeze-virtual-logo.svg" alt="Breeze Airways Virtual logo">
+    </div>
+    <div id="card">
+        <h1>News</h1>
+        <div id="articles">
+            <% for (var i = 0; i < articles.length; i++) { %>
+                <div class="article">
+                    <a href="/news/<%= articles[i].date%>/<%= articles[i].id%>"><strong><%= articles[i].title%></strong></a>
+                    <em><%= articles[i].date%></em>
+                    <p class="article-content"><%- articles[i].firstLine%></p>
+                </div>
+                <% if (i !== articles.length - 1) {%>
+                <hr>
+                <% } %>
+            <% } %>
+        </div>
+    </div>
+    <%-include('../partials/footer')-%>
+</body>
