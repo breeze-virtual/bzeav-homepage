@@ -1,0 +1,54 @@
+@use 'vars' as vars;
+
+.promo-card {
+  width: 75%;
+
+  color: vars.$accent;
+  background-color: vars.$primary;
+
+  text-align: left;
+  align-items: center;
+
+  img {
+    height: 17.625rem;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-left: 1rem;
+  }
+}
+
+
+.btn {
+  cursor: pointer;
+  margin: 1em;
+}
+
+.dot {
+  height: 1rem;
+  width: 1rem;
+  margin: 2px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: vars.$accent;
+}
+
+.slide {
+  flex-direction: row;
+  align-items: center;
+}
+
+#card-2 {
+  color: vars.$text;
+  background-color: vars.$accent;
+}
+
+#dotContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

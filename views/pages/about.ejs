@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cian Ormond">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/ss/style.css">
+    <link rel="stylesheet" href="/ss/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand">
+    <script src="/js/friconix-icons.js"></script>
+</head>
+<body>
+    <%-include('../partials/navbar')-%>
+    <div id="cover">
+        <img src="/img/cover.jpg" alt="Breeze Airways aircraft pushing back" width="100%">
+        <img id="home-logo" src="/img/breeze-virtual-logo.svg" alt="Breeze Airways Virtual logo">
+    </div>
+    <div id="card">
+        <h1>About Us</h1>
+        <p>Breeze Airways Virtual is a Virtual Airline created in 2023 by two VATSIM controllers and sim pilots as a
+            hobby. It's based on the real-world Breeze Airways, based in Utah with operations commencing in 2021.</p>
+        <h2>Staff</h2>
+        <div id="staff">
+            <div class="staff-member">
+                <img class="staff-image" src="/img/staff/jordan.jpg" alt="Jordan Jacklin">
+                <strong id="name">Jordan Jacklin</strong>
+                <span id="position">Chief Executive Officer</span>
+                <span id="base">Breeze Base - KPVU</span>
+                <span id="email"><a href="mailto:ceo@breezeva.org">ceo@breezeva.org</a></span>
+            </div>
+            <div class="staff-member">
+                <img class="staff-image" src="/img/staff/cian.jpg" alt="Cian Ormond">
+                <strong id="name">Cian Ormond</strong>
+                <span id="position">Chief Operating Officer | Web Master</span>
+                <span id="base">Breeze Base - KLAX</span>
+                <span id="email"><a href="mailto:wm@breezeva.org">wm@breezeva.org</a></span>
+            </div>
+            <div class="staff-member">
+                <div class="staff-image"></div>
+                <strong id="name">Vacant</strong>
+                <span id="position">Social Media Manager</span>
+                <span id="base">Breeze Base - N/A</span>
+                <span id="email"><a href="mailto:media@breezeva.org">media@breezeva.org</a></span>
+            </div>
+            <div class="staff-member">
+                <div class="staff-image"></div>
+                <strong id="name">Vacant</strong>
+                <span id="position">Hub Managers</span>
+                <span id="base">Breeze Base - N/A</span>
+                <span id="email">N/A</span>
+            </div>
+        </div>
+    </div>
+    <%-include('../partials/footer')-%>
+</body>

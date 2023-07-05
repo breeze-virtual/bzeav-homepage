@@ -1,0 +1,27 @@
+@use 'vars' as vars;
+
+span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.promo-card {
+  width: 75%;
+
+  color: vars.$accent;
+  background-color: vars.$primary;
+
+  text-align: left;
+  align-items: center;
+
+  img {
+    height: 17.625rem;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+}
+
+#card {
+  padding: 1rem;
+}

@@ -25,6 +25,7 @@
   img {
     margin: auto;
     width: 4rem;
+    cursor: pointer;
   }
 
   .nav-icon {
@@ -34,6 +35,8 @@
     padding: 1rem;
 
     color: vars.$text;
+
+    cursor: pointer;
 
     span {
       background-color: vars.$translucent-colour;

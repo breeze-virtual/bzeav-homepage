@@ -1,0 +1,34 @@
+@use 'vars' as vars;
+
+#card-1 {
+  color: vars.$accent;
+  background-color: vars.$primary;
+
+  text-align: left;
+
+  img {
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+}
+
+#card-2 {
+  color: vars.$text;
+  background-color: vars.$accent;
+
+  text-align: right;
+}
+
+#card-3 {
+  color: vars.$accent;
+  background-color: vars.$primary;
+
+  text-align: left;
+
+  img {
+    height: 17.625rem;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+}
