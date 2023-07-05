@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cian Ormond">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Fleet</title>
+    <link rel="stylesheet" href="/ss/style.css">
+    <link rel="stylesheet" href="/ss/hubs-routes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand">
+    <script src="/js/slideshow.js"></script>
+    <script src="/js/friconix-icons.js"></script>
+</head>
+<body>
+    <%-include('../partials/navbar')-%>
+    <div id="cover">
+        <img src="/img/cover.jpg" alt="Breeze Airways aircraft pushing back" width="100%">
+        <img id="home-logo" src="/img/breeze-virtual-logo.svg" alt="Breeze Airways Virtual logo">
+    </div>
+    <div id="card">
+        <h1>Hubs and Routes</h1>
+        <h2>Hubs</h2>
+        <div class="promo-card" id="card-1">
+            <a class="prev btn" onclick="nextSlide(true)">&#10094;</a>
+            <% hubs.forEach((hub) => { %>
+            <div class="slide">
+                <p><strong><%= hub.name%></strong> <%= hub.desc%><br><br><br><br><%= hub.source%></p>
+                <img src="<%= hub.img%>" alt="<%= hub.icao%> airport image">
+            </div>
+            <% }); %>
+            <a class="next btn" onclick="nextSlide()">&#10095;</a>
+            <div id="dotContainer">
+                <% hubs.forEach(() => { %>
+                <span class="dot"></span>
+                <% }); %>
+            </div>
+            <script>nextSlide()</script>
+        </div>
+        <h2>Routes</h2>
+        <div class="promo-card" id="card-2">
+            <p>Under construction</p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <%-include('../partials/footer')%>
+</body>

@@ -53,16 +53,21 @@ app.get('/news/:date/:id', async (req, res) => {
 
         res.render('pages/article.ejs', { article: article, content: marked.parse(content) });
     } catch (err) {
-        console.log(err);
+        console.error(err);
         res.render('pages/err.ejs', {code: 404, message: 'Article not found'});
     }
+});
+
+app.get('/hubs-routes', async (req, res) => {
+    const hubs = JSON.parse(fs.readFileSync('./private/hubs.json', 'utf8')).hubs;
+    res.render('pages/hubs-routes.ejs', { hubs: hubs });
 });
 
 app.get('/fleet', async (req, res) => {
     res.render('pages/fleet.ejs');
 });
 
-app.get('*', (req, res) => {
+app.get('*', async (req, res) => {
     res.render('pages/err.ejs', { code: 404, message: 'Page not found' });
 });
 

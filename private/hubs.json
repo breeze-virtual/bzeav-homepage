@@ -1,0 +1,53 @@
+{
+  "hubs": [
+    {
+      "icao": "KCHS",
+      "name": "Charleston International Airport",
+      "img": "https://skyvector.com/sites/default/files/media/images/Charleston.jpg",
+      "desc": "is a joint civil-military airport 12 miles northwest of North Charleston, South Carolina. It's South Carolina's largest airport.",
+      "source": "SkyVector"
+    },
+    {
+      "icao": "KBDL",
+      "name": "Bradley International Airport",
+      "img": "https://images.ifly.com/BDL/Hartford-Airport-BDL-aerial-view.jpg?tr=w-1200",
+      "desc": "is a joint civil-military airport in Windsor Locks, Connecticut. It's the second-largest airport in New England.",
+      "source": "iFly.com"
+    },
+    {
+      "icao": "KMSY",
+      "name": "Louis Armstrong New Orleans International Airport",
+      "img": "https://i.pinimg.com/originals/f4/b4/f3/f4b4f325225a7c9821086a688bb43ece.jpg",
+      "desc": "is an international Class B airport 11 miles west of downtown New Orleans. It's the third lowest-lying international airport in the world.",
+      "source": "Pinterest"
+    },
+    {
+      "icao":"KORF",
+      "name": "Norfolk International Airport",
+      "img": "https://skyvector.com/sites/default/files/media/images/KORF-Airport.png",
+      "desc": "is an international airport without any international destinations 3 miles northeast of downtown Norfolk. It's the third-busiest airport in Virginia.",
+      "source": "SkyVector"
+    },
+    {
+      "icao": "KPVD",
+      "name": "Rhode Island T. F. Green International Airport",
+      "img": "https://i.pinimg.com/736x/fb/db/1b/fbdb1b535e76222870d0706d56c76b9e--rhode-island-airports.jpg",
+      "desc": "is an international airport 6 miles south of downtown Providence. It's the largest airport in Rhode Island... obviously.",
+      "source": "Pinterest"
+    },
+    {
+      "icao": "KPVU",
+      "name": "Provo Municipal Airport",
+      "img": "https://flttrack.fltplan.com/airportphotos/KPVU.jpg",
+      "desc": "is a public airport 3 miles west of Provo, Utah. It's the second busiest public airport in Utah.",
+      "source": "FltPlan.com"
+    },
+    {
+      "icao": "KTPA",
+      "name": "Tampa International Airport",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Tampa_Intl_Oct2022.jpg/960px-Tampa_Intl_Oct2022.jpg",
+      "desc": "is an international airport 6 miles west of downtown Tampa. It's the 31st busiest airport in North America.",
+      "source": "Austin Dunbar, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=124489226"
+    }
+  ]
+}
