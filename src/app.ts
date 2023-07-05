@@ -38,6 +38,10 @@ app.get('/', async (req, res) => {
     res.render('pages/index.ejs');
 });
 
+app.get('/about', async (req, res) => {
+    res.render('pages/about.ejs');
+});
+
 app.get('/news', async (req, res) => {
     const articles = await JSON.parse(fs.readFileSync('./private/articles/articles.json', 'utf8')).articles;
     res.render('pages/news.ejs', { articles: articles});
