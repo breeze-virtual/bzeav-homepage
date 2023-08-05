@@ -25,3 +25,9 @@ span {
 #card {
   padding: 1rem;
 }
+
+@media (max-width: 1599px) {
+  .promo-card {
+    width: 90%;
+  }
+}

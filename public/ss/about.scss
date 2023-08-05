@@ -30,8 +30,26 @@
 
       border-radius: 40px;
 
-      margin: auto;
+      margin: 1rem;
       background-color: lightgray;
+    }
+  }
+}
+
+@media (max-width: 1599px) {
+  #staff {
+    .staff-member {
+      width: 15rem;
+      height: 18rem;
+
+      margin: 1rem;
+
+      .staff-image {
+        height: 12rem;
+        width: 9rem;
+
+        margin: 0.5rem;
+      }
     }
   }
 }

@@ -52,3 +52,9 @@
   flex-direction: column;
   justify-content: center;
 }
+
+@media (max-width: 1599px) {
+  .promo-card {
+    width: 90%;
+  }
+}

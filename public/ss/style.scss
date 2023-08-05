@@ -24,17 +24,19 @@ footer {
 
   border-radius: 40px;
 
-  margin: 4rem auto 1rem auto;
+  margin: -100px auto 1rem auto;
   padding: 4rem 0 5rem 0;
 
+  position: relative;
   text-align: center;
+  clear: both;
 
   background-color: vars.$accent;
 }
 
 .promo-card {
   width: 50%;
-  height: 20em;
+  height: 20rem;
 
   border-radius: 40px;
 
@@ -93,10 +95,6 @@ footer {
   }
 }
 
-#content {
-  text-align: center;
-}
-
 #home-logo {
   width: 32rem;
 
@@ -110,5 +108,31 @@ footer {
 
   background-color: vars.$translucent-colour;
   backdrop-filter: vars.$translucent-blur;
+}
+
+@media (max-width: 1599px) {
+  .promo-card {
+    width: 75%;
+    height: 20em;
+
+    border-radius: 40px;
+
+    margin: 2rem auto;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .promo-card-column {
+    padding: 2rem;
+  }
+
+  #card {
+    width: 90%;
+
+    top: 50%;
+  }
 }
 
