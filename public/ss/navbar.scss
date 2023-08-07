@@ -78,5 +78,14 @@
     left: calc((100% - 512px)/2);
 
     flex-direction: row;
+
+    .nav-icon:hover {
+      width: auto;
+
+      span {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
   }
 }
