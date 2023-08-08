@@ -58,3 +58,17 @@
     width: 90%;
   }
 }
+
+@media (max-width: 1079px) {
+  .promo-card {
+    width: auto;
+    background: none;
+    color: inherit;
+  }
+
+  #card {
+    width: 100%;
+    padding: 0;
+  }
+
+}

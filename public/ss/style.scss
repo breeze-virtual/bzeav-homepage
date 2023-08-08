@@ -126,13 +126,19 @@ footer {
   }
 
   .promo-card-column {
-    padding: 2rem;
+    padding: 2rem 0;
   }
 
   #card {
     width: 90%;
 
     top: 50%;
+  }
+}
+
+@media (max-width: 1079px) {
+  #breeze-logo {
+    width: 25rem;
   }
 }
 
